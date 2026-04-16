@@ -1,14 +1,8 @@
-# Karpathy-Inspired Claude Code Guidelines
+# Claude Code Guidelines
 
-> Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
->
-> Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
-
-A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+A single `CLAUDE.md` file to improve Claude Code behavior on LLM coding pitfalls.
 
 ## The Problems
-
-From Andrej's post:
 
 > "The models make wrong assumptions on your behalf and just run along with them without checking. They don't manage their confusion, don't seek clarifications, don't surface inconsistencies, don't present tradeoffs, don't push back when they should."
 
@@ -100,12 +94,12 @@ Strong success criteria let the LLM loop independently. Weak criteria ("make it 
 
 From within Claude Code, first add the marketplace:
 ```
-/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin marketplace add sudo-erasmus/Claude Code Guidelines
 ```
 
 Then install the plugin:
 ```
-/plugin install andrej-karpathy-skills@karpathy-skills
+/plugin install sudo-erasmus-skills@erasmus-skills
 ```
 
 This installs the guidelines as a Claude Code plugin, making the skill available across all your projects.
@@ -114,13 +108,13 @@ This installs the guidelines as a Claude Code plugin, making the skill available
 
 New project:
 ```bash
-curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+curl -o CLAUDE.md https://raw.githubusercontent.com/sudo-erasmus/Claude Code Guidelines/main/CLAUDE.md
 ```
 
 Existing project (append):
 ```bash
 echo "" >> CLAUDE.md
-curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
+curl https://raw.githubusercontent.com/sudo-erasmus/Claude Code Guidelines/main/CLAUDE.md >> CLAUDE.md
 ```
 
 ## Key Insight
@@ -162,4 +156,46 @@ The goal is reducing costly mistakes on non-trivial work, not slowing down simpl
 
 ## License
 
-MIT
+PERSONAL USE LICENSE
+
+Copyright (c) 2026 Isaiah Swanson-Sparks. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+NO SUPPORT
+
+    The author does not offer support for this repository. Questions, pull
+    requests, and issue reports from third parties may be closed without
+    response. This is not unkindness; it is the scope the project was designed
+    for.
+
+NO SECURITY CLAIMS
+
+    This repository is a working procedure, not a security certification. It
+    does not claim to defend against any specific adversary class, does not
+    guarantee any compliance standard, and does not substitute for
+    professional security review of a production environment.
+
+FUTURE LICENSE CHANGE
+
+    The author reserves the right to relicense this repository under a more
+    permissive license (such as MIT, Apache 2.0, or similar) at a later date
+    if and when the repository becomes general-purpose enough to be useful to
+    others. Until such a relicensing is announced, this personal-use license
+    applies.
